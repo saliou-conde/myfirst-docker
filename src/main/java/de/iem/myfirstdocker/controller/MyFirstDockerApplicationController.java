@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/v1/docker")
 public class MyFirstDockerApplicationController {
 
-    @GetMapping("hello")
+    @GetMapping("/")
     public ResponseEntity<String> helloWorld(){
 
         return new ResponseEntity<>("Hello World, " +
