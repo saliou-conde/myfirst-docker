@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: MyFirstDockerApplication
+  datasource:
+    username: postgres
+    password: 19A12iou#
+    #url: jdbc:h2:mem:test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:postgresql://localhost:5432/postgres?useSSL=false
+    pool-size: 30
+    #driverClassName: org.h2.Driver
+    #  dbcp.test-while-idle: true
+    #  dbcp.time-between-eviction-runs-millis: 3600000
+    #  dbcp.validation-query: SELECT 1
+  jpa:
+  #  database: H2
+    show-sql: true
+    hibernate:
+     ddl-auto: update
